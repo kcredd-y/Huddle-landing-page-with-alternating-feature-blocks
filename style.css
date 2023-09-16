@@ -327,7 +327,7 @@ span:hover {
   }
 
   .card {
-    margin: 0;
+    margin: 40px 0 0 0;
     display: grid;
     padding-left: 120px;
     grid-template-columns: 0.6fr 0.4fr;
@@ -352,5 +352,37 @@ span:hover {
     padding: 0;
     padding-right: 12%;
     font-size: 18px;
+  }
+
+  #card__flowing {
+    margin: 40px 0 0 0;
+    display: grid;
+    padding-left: 120px;
+    grid-template-columns: 0.4fr 0.6fr;
+    height: 440px;
+  }
+
+  #flowing__image {
+    grid-column: 1/2;
+    padding-left: 0;
+    padding-right: -35px;
+  }
+
+  #flowing_header {
+    grid-column: 2/3;
+    padding-left: 8rem;
+    font-size: 1.8em;
+  }
+  #flowing_description {
+    grid-column: 2/3;
+    padding-top: 5px;
+    padding-left: 8rem;
+    font-size: 18px;
+  }
+  #user {
+    padding: 0;
+  }
+  #user__description {
+    padding: 0 27% 0 0;
   }
 }
