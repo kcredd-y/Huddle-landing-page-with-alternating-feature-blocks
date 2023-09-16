@@ -1,0 +1,356 @@
+:root {
+  --clr-primary-pink: hsl(322, 100%, 66%);
+  --clr-neutral-pale-cyan: hsl(193, 100%, 96%);
+  --clr-neutral-dark-cyan: hsl(192, 100%, 9%);
+  --clr-neutral-grayishBlue: hsl(208, 11%, 55%);
+
+  --ff-Poppins: "Poppins", sans-serif;
+  --ff-Open-Sans: "Open Sans", sans-serif;
+
+  --fw-regular: 400;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+}
+
+/* CSS Reset */
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  font-family: var(--ff-Open-Sans);
+  font-weight: var(--fw-regular);
+  font-size: 1rem;
+  text-align: center;
+}
+
+.landing-page {
+  background: url(./images/bg-hero-mobile.svg) no-repeat,
+    var(--clr-neutral-pale-cyan);
+}
+header {
+  padding: 28px 1rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.header__img {
+  width: 105px;
+}
+
+.Header__btn {
+  border: none;
+  background-color: white;
+  border-radius: 2rem;
+  width: 100px;
+  height: 25px;
+  grid-column: 3;
+  font-size: 0.7em;
+  font-weight: var(--fw-bold);
+  box-shadow: 0px 0px 2px var(--clr-neutral-grayishBlue);
+}
+
+.Header__btn:hover {
+  cursor: pointer;
+  color: var(--clr-neutral-grayishBlue);
+}
+
+h1 {
+  margin-top: 80px;
+  font-size: 1.6em;
+  padding: 0 10%;
+  font-family: var(--ff-Poppins);
+  line-height: normal;
+}
+
+.slogon {
+  margin-top: 20px;
+  padding: 0 10%;
+  font-size: 1em;
+}
+
+.btn-login {
+  margin: 30px;
+  padding: 0;
+  width: 65%;
+  height: 2.5rem;
+  border-radius: 2rem;
+  border: none;
+  font-size: 0.7em;
+  letter-spacing: 1px;
+  font-weight: var(--fw-semi-bold);
+  background-color: var(--clr-primary-pink);
+  color: white;
+}
+.btn-login:hover {
+  background-color: hsla(322, 100%, 66%, 0.7);
+  cursor: pointer;
+}
+.monitor {
+  padding: 30px;
+}
+
+.container {
+  margin-top: 3.5rem;
+  margin-bottom: 14.5rem;
+}
+
+.card {
+  margin: 40px 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 1rem;
+}
+
+.card__image {
+  padding: 4.2rem 3rem 3rem 3rem;
+}
+
+.card__header {
+  font-family: var(--ff-Poppins);
+  font-size: 1.3em;
+}
+.card__description {
+  color: var(--clr-neutral-grayishBlue);
+  font-size: 0.9em;
+  padding: 1rem 10% 2rem 10%;
+}
+#flowing {
+  padding: 4.2rem 3rem 4.5rem 3rem;
+}
+
+#flowing_description {
+  padding: 1rem 10% 3.8rem 10%;
+}
+
+#user {
+  padding: 1rem 0;
+}
+
+#user__description {
+  padding: 0 12% 2rem 12%;
+}
+.hover-card {
+  position: absolute;
+  left: 0px;
+  width: 90%;
+  height: 176px;
+  background-color: white;
+  top: 154rem;
+  border-radius: 1rem;
+  margin: 1rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.hover-card h2 {
+  font-size: 1.1em;
+  font-family: var(--ff-Open-Sans);
+  padding: 2.5rem 0 1.5rem 0;
+}
+
+.hover-card__button {
+  margin: 0 0 2rem 0;
+}
+
+footer {
+  padding: 8rem 0 2rem 1rem;
+  background-color: var(--clr-neutral-dark-cyan);
+  color: var(--clr-neutral-pale-cyan);
+  text-align: left;
+  font-size: 0.9em;
+}
+
+.footer-icon {
+  margin-left: 2rem;
+  font-size: 2.2em;
+  font-family: var(--ff-Poppins);
+}
+
+.contact-details {
+  padding: 1rem 1rem 0 0;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 2rem;
+}
+.flex-group {
+  font-size: initial;
+  display: grid;
+  grid-template-columns: 10% 90%;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+  padding: 2rem 0;
+  font-size: initial;
+}
+li {
+  padding-top: 1rem;
+}
+li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.social-media {
+  padding: 2rem 0 1rem 30%;
+}
+span {
+  padding: 8px 12px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+span:hover {
+  cursor: pointer;
+  background-color: var(--clr-primary-pink);
+}
+
+.copyrights {
+  padding: 1rem;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    text-align: left;
+  }
+
+  .landing-page {
+    background: url(./images/bg-hero-desktop.svg) no-repeat,
+      var(--clr-neutral-pale-cyan);
+    padding: 55px 75px 0px 80px;
+    display: grid;
+    grid-template-columns: 0.4fr 0.6fr;
+  }
+
+  header {
+    padding: 0;
+    grid-column: 1/3;
+  }
+
+  .header__img {
+    width: 200px;
+  }
+
+  .Header__btn {
+    width: 200px;
+    height: 48px;
+    font-size: 0.89em;
+  }
+
+  h1 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin-top: 155px;
+    font-size: 2.5em;
+    padding: 0;
+  }
+  .slogon {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding: 0;
+    margin-top: 302px;
+    font-size: 18px;
+  }
+
+  .btn-login {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 275px;
+    height: 55px;
+    margin: 415px 0 0 0;
+    font-size: 0.89em;
+    letter-spacing: 0;
+  }
+
+  .monitor {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding: 58px 0 70px 70px;
+  }
+  .container {
+    margin: 160px 105px;
+  }
+
+  .card {
+    margin: 0;
+    display: grid;
+    padding-left: 120px;
+    grid-template-columns: 0.6fr 0.4fr;
+    height: 440px;
+  }
+  .card__image {
+    grid-column: 2/3;
+    padding: 62px 20px;
+  }
+
+  .card__header {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-top: 165px;
+    font-size: 1.8em;
+  }
+
+  .card__description {
+    margin-top: 215px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding: 0;
+    padding-right: 12%;
+    font-size: 18px;
+  }
+}
