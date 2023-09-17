@@ -142,6 +142,7 @@ h1 {
 }
 
 .container {
+  position: relative;
   margin-top: 3.5rem;
   margin-bottom: 14.5rem;
 }
@@ -186,7 +187,7 @@ h1 {
   width: 90%;
   height: 176px;
   background-color: white;
-  top: 154rem;
+  bottom: -314px;
   border-radius: 1rem;
   margin: 1rem;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -214,6 +215,7 @@ footer {
   margin-left: 2rem;
   font-size: 2.2em;
   font-family: var(--ff-Poppins);
+  color: white;
 }
 
 .contact-details {
@@ -384,5 +386,61 @@ span:hover {
   }
   #user__description {
     padding: 0 27% 0 0;
+  }
+
+  .hover-card {
+    margin: 0;
+    left: 320px;
+    bottom: -440px;
+    height: 280px;
+    width: 800px;
+  }
+
+  .hover-card h2 {
+    font-size: 2.1em;
+    padding: 65px 100px 35px 137px;
+  }
+  .hover-card__button {
+    margin: 0 200px;
+    width: 400px;
+    height: 80px;
+    border-radius: 4rem;
+    font-size: 1.1em;
+  }
+
+  footer {
+    margin-top: 21.25rem;
+    padding: 11.875rem 0 2rem 7.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .footer-icon {
+    font-size: 3em;
+    font-weight: 900;
+  }
+  .contact-details {
+    grid-column: 1/2;
+    padding: 1rem 3rem 0 0;
+  }
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 0 4rem 3.5rem;
+    gap: 1rem;
+  }
+  li {
+    padding: 0.5rem;
+    font-size: 1.1em;
+  }
+
+  .social-media {
+    padding: 2rem 0 1rem 96px;
+  }
+
+  .copyrights {
+    grid-column: 3/4;
+    padding-left: 3rem;
+    font-size: 0.9em;
   }
 }
